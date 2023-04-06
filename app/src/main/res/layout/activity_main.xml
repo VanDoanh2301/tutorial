@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_8"
+        tools:context=".MainActivity"
+
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/menu_toolbar"
+            app:navigationIcon="@drawable/baseline_home_24"
+            android:elevation="4dp"
+            android:background="#FCD586"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toolbar Title"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+        />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+    >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="20dp"
+
+
+    >
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:layout_marginStart="30dp"
+                      android:layout_marginEnd="30dp"
+                      android:background="@drawable/gradient_image"
+
+        >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/img"
+                       android:layout_gravity="top"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:layout_marginStart="30dp"
+                      android:layout_marginEnd="30dp"
+                      android:background="@drawable/gradient_image3"
+
+        >
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/img_1"
+                       android:layout_gravity="top"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:textSize="20sp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="20dp"
+    >
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:layout_marginStart="30dp"
+                      android:layout_marginEnd="30dp"
+                      android:background="@drawable/gradient_image2"
+        >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/img_2"
+                       android:layout_gravity="top"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:textSize="20sp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:layout_marginStart="30dp"
+                      android:layout_marginEnd="30dp"
+                      android:background="@drawable/gradient_image1"
+        >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/img_3"
+                       android:layout_gravity="top"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:textSize="20sp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:fontFamily="casual"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:weightSum="2"
+                  android:layout_margin="20dp"
+                  android:paddingLeft="30dp"
+                  android:paddingRight="30dp"
+                  >
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/img_4"
+                android:background="@drawable/button_draw"
+                android:text="Button"
+                android:textAlignment="center"
+                android:fontFamily="casual"/>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/img_5"
+                android:background="@drawable/button_draw1"
+                android:text="Button"
+                android:textAlignment="center"
+                android:fontFamily="casual"/>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/img_6"
+                android:background="@drawable/button_draw2"
+                android:text="Button"
+                android:textAlignment="center"
+                android:fontFamily="casual"/>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/img_7"
+                android:background="@drawable/button_draw3"
+                android:text="Button"
+                android:textAlignment="center"
+                android:fontFamily="casual"/>
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
